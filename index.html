@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creando recuerdos jsjsjs</title>
+  <!-- Fuentes de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #fde2e4, #bee1e6);
+      color: #333;
+    }
+
+    /* Sección principal */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+      background: linear-gradient(to right, #f78fb3, #f7b2b7);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: 'Muro de Fotos ❤';
+      font-size: 150px;
+      color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      animation: float 5s infinite ease-in-out;
+    }
+
+    .hero::before {
+      top: -50px;
+      left: -30px;
+    }
+
+    .hero::after {
+      bottom: -50px;
+      right: -30px;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Galería */
+    .gallery {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #f78fb3;
+    }
+
+    .gallery .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background-color: #fff;
+    }
+
+    .gallery .photo .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .gallery .photo:hover .overlay {
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f78fb3;
+      color: #fff;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+    }
+
+    /* Detalles decorativos */
+    .decorative-text {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2em;
+      color: #555;
+      margin: 30px 0;
+    }
+
+    .decorative-text span {
+      color: #f78fb3;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sección principal -->
+  <header class="hero">
+    <h1></h1>
+    <p>💖 Quiero seguir viviendo esto. 💖 </p>
+  </header>
+
+
+
+  <!-- Galería de fotos -->
+  <section class="gallery">
+    <h2>Nuestra Galería 🌸</h2>
+    <div class="grid">
+      <!-- Fotos dinámicas -->
+      <div class="photo"><img src="img/12.jpeg" alt="Foto 1"><div class="overlay">❤️</div></div>
+      <div class="photo"><img src="img/10.jpeg" alt="Foto 2"><div class="overlay">🌹</div></div>
+      <div class="photo"><img src="img/21.jpeg" alt="Foto 3"><div class="overlay">💖</div></div>
+      <div class="photo"><img src="img/20.jpeg" alt="Foto 4"><div class="overlay">🌟</div></div>
+      <div class="photo"><img src="img/15.jpeg" alt="Foto 5"><div class="overlay">💞</div></div>
+      <div class="photo"><img src="img/9.jpeg" alt="Foto 6"><div class="overlay">💌</div></div>
+      <div class="photo"><img src="img/17.jpeg" alt="Foto 7"><div class="overlay">🥰</div></div>
+      <div class="photo"><img src="img/6.jpeg" alt="Foto 8"><div class="overlay">💓</div></div>
+      <div class="photo"><img src="img/5.jpeg" alt="Foto 9"><div class="overlay">✨</div></div>
+      <div class="photo"><img src="img/11.jpeg" alt="Foto 10"><div class="overlay">🌺</div></div>
+      <div class="photo"><img src="img/16.jpeg" alt="Foto 11"><div class="overlay">💘</div></div>
+      <div class="photo"><img src="img/4.jpeg" alt="Foto 12"><div class="overlay">💕</div></div>
+      <div class="photo"><img src="img/8.jpeg" alt="Foto 13"><div class="overlay">🌈</div></div>
+      <div class="photo"><img src="img/7.jpeg" alt="Foto 14"><div class="overlay">🌹</div></div>
+      <div class="photo"><img src="img/19.jpeg" alt="Foto 15"><div class="overlay">💎</div></div>
+      <div class="photo"><img src="img/18.jpeg" alt="Foto 16"><div class="overlay">🌈</div></div>
+      <div class="photo"><img src="img/13.jpeg" alt="Foto 17"><div class="overlay">🎉</div></div>
+      <div class="photo"><img src="img/14.jpeg" alt="Foto 18"><div class="overlay">🌷</div></div>
+      <div class="photo"><img src="img/3.jpeg" alt="Foto 19"><div class="overlay">💝</div></div>
+      <div class="photo"><img src="img/2.jpeg" alt="Foto 20"><div class="overlay">Z.zZ</div></div>
+      <div class="photo"><img src="img/1.jpeg" alt="Foto 21"><div class="overlay">Zzz</div></div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    "🌸No sé si tus abrazos son tan buenos o yo simplemente no quiero soltarte. 🌸"
+  </footer>
+</body>
+</html>
